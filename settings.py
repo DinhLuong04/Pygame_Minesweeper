@@ -1,7 +1,7 @@
-# COLORS (r, g, b)
 import pygame
 import os
 
+# Colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 DARKGREY = (40, 40, 40)
@@ -13,16 +13,17 @@ RED = (255, 0, 0)
 YELLOW = (255, 255, 0)
 BGCOLOUR = DARKGREY
 
-# game settings
-TILESIZE = 32
-ROWS = 15
-COLS = 15
-AMOUNT_MINES = 5
-WIDTH = TILESIZE * ROWS
-HEIGHT = TILESIZE * COLS
-FPS = 60
-TITLE = " Game Minesweeper"
+# Game settings
+TILESIZE = 40  # Set tile size to 40px, more like a typical Minesweeper game
+ROWS = 16  # 16 rows for standard Minesweeper size
+COLS = 16  # 16 columns for standard Minesweeper size
+AMOUNT_MINES = 40  # Approximately 15-20% of the grid for mines
+WIDTH = TILESIZE * COLS
+HEIGHT = TILESIZE * ROWS
+FPS = 60  # Standard FPS for smooth gameplay
+TITLE = "Minesweeper Clone"
 
+# Load tile images (ensure the assets folder contains the necessary images)
 tile_numbers = []
 for i in range(1, 9):
     tile_numbers.append(pygame.transform.scale(pygame.image.load(os.path.join("assets", f"Tile{i}.png")), (TILESIZE, TILESIZE)))
@@ -33,7 +34,3 @@ tile_flag = pygame.transform.scale(pygame.image.load(os.path.join("assets", "Til
 tile_mine = pygame.transform.scale(pygame.image.load(os.path.join("assets", "TileMine.png")), (TILESIZE, TILESIZE))
 tile_unknown = pygame.transform.scale(pygame.image.load(os.path.join("assets", "TileUnknown.png")), (TILESIZE, TILESIZE))
 tile_not_mine = pygame.transform.scale(pygame.image.load(os.path.join("assets", "TileNotMine.png")), (TILESIZE, TILESIZE))
-
-
-
-
