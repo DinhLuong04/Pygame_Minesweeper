@@ -21,7 +21,7 @@ AMOUNT_MINES = 5
 WIDTH = TILESIZE * ROWS
 HEIGHT = TILESIZE * COLS
 FPS = 60
-TITLE = "Minesweeper Clone"
+TITLE = " Game Minesweeper"
 
 tile_numbers = []
 for i in range(1, 9):
