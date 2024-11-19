@@ -14,14 +14,14 @@ YELLOW = (255, 255, 0)
 BGCOLOUR = DARKGREY
 
 # Game settings
-TILESIZE = 40  # Set tile size to 40px, more like a typical Minesweeper game
-ROWS = 16  # 16 rows for standard Minesweeper size
-COLS = 16  # 16 columns for standard Minesweeper size
-AMOUNT_MINES = 40  # Approximately 15-20% of the grid for mines
+TILESIZE = 40  
+ROWS = 16  
+COLS = 16  
+AMOUNT_MINES = 40  
 WIDTH = TILESIZE * COLS
 HEIGHT = TILESIZE * ROWS
-FPS = 60  # Standard FPS for smooth gameplay
-TITLE = "Minesweeper Clone"
+FPS = 60 
+TITLE = "Minesweeper Game Gruop 10"
 
 # Load tile images (ensure the assets folder contains the necessary images)
 tile_numbers = []
